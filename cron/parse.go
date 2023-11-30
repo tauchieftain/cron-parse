@@ -1,4 +1,4 @@
-package cronParse
+package cron
 
 import (
 	"errors"

@@ -1,13 +1,13 @@
 package main
 
 import (
-	cronParse "cronParse/src"
+	"cronParse/cron"
 	"fmt"
 	"time"
 )
 
 func main() {
 	expr := "0 5 * * * ?"
-	p := cronParse.NewParse(expr)
+	p := cron.NewParse(expr)
 	fmt.Println(p.NextExecTime(time.Now()))
 }
